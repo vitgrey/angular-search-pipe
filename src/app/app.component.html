@@ -1,0 +1,12 @@
+<input type="text" placeholder="Search" [(ngModel)]="query">
+
+<div *ngFor="let lock of locked | search: query">
+
+  <hr>
+  
+  <h3>{{lock.User}}</h3>
+  <h3>{{lock.AuthID}}</h3>
+  <h3>{{lock.FormName}}</h3>
+  <h3>{{lock.WinHandle}}</h3>
+
+</div>
